@@ -1,2 +1,4 @@
 my H5 
-branch
+ 
+linyivr  基于krpano的全景H5
+
