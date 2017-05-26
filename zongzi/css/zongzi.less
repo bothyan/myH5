@@ -1,0 +1,1379 @@
+
+.opacity(@val) {
+	@ie_val: @val * 100;
+	opacity: @val;
+	filter: ~"alpha(opacity=@{ie_val})";
+}
+.transform(@val) {
+	-webkit-transform: @val;
+	-moz-transform: @val;
+	-ms-transform: @val;
+	-o-transform: @val;
+	transform: @val;
+} 
+.animation(@val) {
+	-webkit-animation: @val;
+	-moz-animation: @val;
+	-ms-animation: @val;
+	-o-animation: @val; 
+	animation: @val;
+} 
+.transition(@val) {
+	-webkit-transition: @val;
+	-moz-transition: @val;
+	-ms-transition: @val;
+	-o-transition: @val;
+	transition: @val; 
+}
+body,html{
+	width:100%; 
+	height:100%;
+	overflow:hidden;  
+}
+body{
+   width:640px; 
+   margin:0 auto; 
+   position:relative;
+   font-family:"微软雅黑";
+}
+
+@keyframes yunsani
+{
+    from { 
+        .transform(translatex(-100px))
+    }
+    to { 
+        .transform(translatex(100px))
+    }
+}
+@-moz-keyframes yunsani 
+{
+    from { 
+        .transform(translatex(-100px))
+    }
+    to { 
+        .transform(translatex(100px))
+    }
+}
+@-webkit-keyframes yunsani 
+{
+    from { 
+        .transform(translatex(-100px))
+    }
+    to { 
+        .transform(translatex(100px))
+    }
+}
+@-o-keyframes yunsani 
+{
+    from { 
+        .transform(translatex(-100px))
+    }
+    to { 
+        .transform(translatex(100px))
+    }
+}
+
+@keyframes cityani
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-10px))
+    }
+}
+@-moz-keyframes cityani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-10px))
+    }
+}
+@-webkit-keyframes cityani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-10px))
+    }
+}
+@-o-keyframes cityani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-10px))
+    }
+}
+
+@keyframes themeani
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+@-moz-keyframes themeani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+@-webkit-keyframes themeani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+@-o-keyframes themeani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+
+@keyframes themescale
+{
+    from { 
+        .transform(scale(0))
+    }
+    to { 
+        .transform(scale(1))
+    }
+}
+@-moz-keyframes themescale 
+{
+    from { 
+        .transform(scale(0))
+    }
+    to { 
+        .transform(scale(1))
+    }
+}
+@-webkit-keyframes themescale 
+{
+    from { 
+        .transform(scale(0))
+    }
+    to { 
+        .transform(scale(1))
+    }
+}
+@-o-keyframes themescale 
+{
+    from { 
+        .transform(scale(0))
+    }
+    to { 
+        .transform(scale(1))
+    }
+}
+
+@keyframes shuiwenani
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+@-moz-keyframes shuiwenani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+@-webkit-keyframes shuiwenani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+@-o-keyframes shuiwenani 
+{
+    from { 
+        .transform(translatey(0px))
+    }
+    to { 
+        .transform(translatey(-15px))
+    }
+}
+
+@keyframes yuerani
+{
+    from { 
+        .transform(rotate(0deg))
+    }
+    to { 
+        .transform(rotate(-360deg))
+    }
+}
+@-moz-keyframes yuerani 
+{
+    from { 
+        .transform(rotate(0deg))
+    }
+    to { 
+        .transform(rotate(-360deg))
+    }
+}
+@-webkit-keyframes yuerani 
+{
+    from { 
+        .transform(rotate(0deg))
+    }
+    to { 
+        .transform(rotate(-360deg))
+    }
+}
+@-o-keyframes yuerani 
+{
+    from { 
+        .transform(rotate(0deg))
+    }
+    to { 
+        .transform(rotate(-360deg))
+    }
+}
+
+@keyframes po1ani
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+@-moz-keyframes po1ani 
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+@-webkit-keyframes po1ani 
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+@-o-keyframes po1ani 
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+
+@keyframes po2ani
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+@-moz-keyframes po2ani 
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+@-webkit-keyframes po2ani 
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+@-o-keyframes po2ani 
+{
+    from { 
+        .transform(translatey(0px));
+        .opacity(1)
+    }
+    to { 
+        .transform(translatey(-100px));
+        .opacity(0)
+    }
+}
+
+@keyframes goani
+{
+    from { 
+        .transform(rotate(1.5deg));
+    }
+    to { 
+        .transform(rotate(-1.5deg));
+    }
+}
+@-moz-keyframes goani 
+{
+    from { 
+        .transform(rotate(1.5deg));
+    }
+    to { 
+        .transform(rotate(-1.5deg));
+    }
+}
+@-webkit-keyframes goani 
+{
+    from { 
+        .transform(rotate(1.5deg));
+    }
+    to { 
+        .transform(rotate(-1.5deg));
+    }
+}
+@-o-keyframes goani 
+{
+    from { 
+        .transform(rotate(1.5deg));
+    }
+    to { 
+        .transform(rotate(-1.5deg));
+    }
+}
+
+@keyframes gotop
+{
+    from { 
+        bottom:-248px;
+        .opacity(0)
+    }
+    to { 
+        bottom:200px;
+        .opacity(1)
+    }
+}
+@-moz-keyframes gotop 
+{
+    from { 
+        bottom:-248px;
+        .opacity(0)
+    }
+    to { 
+        bottom:200px;
+        .opacity(1)
+    }
+}
+@-webkit-keyframes gotop 
+{
+    from { 
+        bottom:-248px;
+        .opacity(0)
+    }
+    to { 
+        bottom:200px;
+        .opacity(1)
+    }
+}
+@-o-keyframes gotop
+{
+    from { 
+        bottom:-248px;
+        .opacity(0)
+    }
+    to { 
+        bottom:200px;
+        .opacity(1)
+    }
+}
+
+@keyframes fadeInAni
+{
+    from { 
+        .opacity(0)
+    }
+    to { 
+        .opacity(1)
+    }
+}
+@-moz-keyframes fadeInAni 
+{
+    from { 
+        .opacity(0)
+    }
+    to { 
+        .opacity(1)
+    }
+}
+@-webkit-keyframes fadeInAni 
+{
+    from { 
+        .opacity(0)
+    }
+    to { 
+        .opacity(1)
+    }
+}
+@-o-keyframes fadeInAni
+{
+    from { 
+        .opacity(0)
+    }
+    to { 
+        .opacity(1)
+    }
+}
+
+
+@-webkit-keyframes adani{
+    0%{
+        .transform(rotate(0deg));
+    }
+    
+    50%{
+        .transform(rotate(180deg));
+    }
+
+    100%{
+        .transform(rotate(360deg));
+    }
+}
+@-o-keyframes adani{
+    0%{
+        .transform(rotate(0deg));
+    }
+    
+    50%{
+        .transform(rotate(180deg));
+    }
+
+    100%{
+        .transform(rotate(360deg));
+    }
+}
+@-moz-keyframes adani{
+    0%{
+        .transform(rotate(0deg));
+    }
+    
+    50%{
+        .transform(rotate(180deg));
+    }
+
+    100%{
+        .transform(rotate(360deg));
+    }
+}
+@keyframes adani{
+    0%{
+        .transform(rotate(0deg));
+    }
+    
+    50%{
+        .transform(rotate(180deg));
+    }
+
+    100%{
+        .transform(rotate(360deg));
+    }
+ 
+}
+
+@-webkit-keyframes yusani{
+    0%{
+       .opacity(0);
+       right:0px;
+    }
+    50%{
+        .opacity(1);
+        right:250px;
+    }
+    100%{
+        .opacity(0);
+        right:500px;
+    }
+}
+@-o-keyframes yusani{
+    0%{
+       .opacity(0);
+       right:0px;
+    }
+    50%{
+        .opacity(1);
+        right:250px;
+    }
+    100%{
+        .opacity(0);
+        right:500px;
+    }
+}
+@-moz-keyframes yusani{
+    0%{
+       .opacity(0);
+       right:0px;
+    }
+    50%{
+        .opacity(1);
+        right:250px;
+    }
+    100%{
+        .opacity(0);
+        right:500px;
+    }
+}
+@keyframes yusani{
+    0%{
+       .opacity(0);
+       right:0px;
+    }
+    50%{
+        .opacity(1);
+        right:250px;
+    }
+    100%{
+        .opacity(0);
+        right:500px;
+    }
+}
+
+.loading-img{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    .opacity(0);
+}
+.music{
+    width:70px;
+    height:70px;
+    background-image:url(http://nos.netease.com/house-public/2889587769d45071551164b12867ff10.png);
+    position:absolute;
+    top:20px;
+    right:20px;
+    z-index:200;
+    display:none;
+}
+.trierror,.triright{
+    width:70px;
+    height:70px;
+    top:-20px;
+    right:-20px;
+    position:absolute;
+    .opacity(0);
+}
+.musicon{
+    background-position:0 0;
+}
+.musicoff{
+    background-position:-70px 0;
+}
+.share{
+    width:70px;
+    height:70px;
+    background:url(http://nos.netease.com/house-public/2451ad92b030d153b984233102e9dea8.png);
+    position:absolute;
+    top:100px;
+    right:20px;
+    z-index:200;
+    display:none;
+}
+.loading{
+    display:block;
+    width:100%;
+    height:100%;
+    background:url(http://nos.netease.com/house-public/05140d167131da8004eb7698e15e4f35.jpg);
+    background-size:100% 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:50;
+    .zongzi{
+        width:150px;
+        height:150px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        background-image:url(http://nos.netease.com/house-public/b3a181df7f57a482b316086b0f0505c9.png);
+        background-position:0 0;
+        margin-left:-75px;
+        margin-top:-280px;
+    }
+    .tips{
+        color:#acd6f4;
+        font-size:26px;
+        text-align:center;
+        position:absolute;
+        top:50%;
+        left:0;
+        margin-top:-105px;
+        width:100%;
+    }
+    .percent{
+        color:#acd6f4;
+        font-size:26px;
+        width:100%;
+        text-align:center;
+        position:absolute;
+        top:50%;
+        left:0;
+        margin-top:-50px;
+    }
+}
+.index{
+    display:none;
+    width:100%;
+    height:100%;
+    background:url(http://nos.netease.com/house-public/7eba8e244eaeebf66f84b23ed486abd5.jpg);
+    background-size:100% 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:20;
+    .theme{
+        width:582px;
+        height:473px;
+        position:absolute;
+        left:50px;
+        top:110px;
+        z-index:5; 
+        .transform(scale(0));
+        .animation(themescale 1s forwards .5s linear);
+    }
+    .themeani{
+        .animation(themeani 2s ease-in-out infinite alternate);
+    }
+    .shuiwen{
+        width:584px;
+        height:160px;
+        background:url(http://nos.netease.com/house-public/9e57d5e5d90135daaca2d4d2e2cc50eb.png);
+        position:absolute;
+        top:420px;
+        right:40px;
+        z-index:7;
+        .opacity(0);
+        .animation(fadeInAni 0.5s forwards 2.5s linear);
+    }
+    .shuiwenani{
+        .opacity(1);
+        .animation(shuiwenani 3s ease-in-out infinite alternate);
+    }
+    .go{
+        width:235px;
+        height:248px;
+        background:url(http://nos.netease.com/house-public/e2db466d1c542cdfab08c5ef32d80755.png);
+        position:absolute;
+        bottom:-248px;
+        left:188px;
+        z-index:10;
+        .opacity(0);
+        .animation(gotop 1s forwards 1.5s ease-out);
+    }
+    .goani{
+        bottom:200px;
+        .opacity(1);
+        .animation(goani .5s linear infinite alternate); 
+    }
+    .yuer{
+        width:600px;
+        height:600px;
+        position:absolute;
+        left:20px;
+        top:20px;
+        z-index:1; 
+        i{
+            width:177px;
+            height:188px;
+            background:url(http://nos.netease.com/house-public/cb786128fc5e4a0fd1ab7d08eedc1b05.png);
+            position:absolute;
+            bottom:0;
+            left:0;
+            z-index:1;
+        }
+    }
+    .yuerani{
+        .animation(yuerani 30s linear infinite);
+    }
+    .po1{
+        width:141px;
+        height:91px;
+        background:url(http://nos.netease.com/house-public/173fa8265d516cf93fb8dc9cba3b7970.png);
+        position:absolute;
+        top:830px;
+        left:140px;
+        z-index:8;
+    }
+    .po1ani{
+        .animation(po1ani 3s ease-out infinite);
+    }
+    .po2{
+        width:81px;
+        height:103px;
+        background:url(http://nos.netease.com/house-public/9fa159d1394c8b3c175d0a95c9fe1c9f.png);
+        position:absolute;
+        top:768px;
+        right:150px;
+        z-index:8;
+    }
+    .po2ani{
+        .animation(po2ani 5s ease-out infinite);
+    }
+    .logo{
+        width:132px;
+        height:38px;
+        background:url(http://nos.netease.com/house-public/a79d67b1c213d42027c0f38c237a1970.png);
+        position:absolute;
+        bottom:25px;
+        left:254px;
+        z-index:1;
+    }
+}
+.home{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    z-index:30;
+    .main{
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:10;
+        .surface{
+            width: 1138px;
+            height: 1138px; 
+            background-size: cover; 
+            position: absolute;
+        }
+        .bg { 
+            position: absolute; 
+            width: 1138px; 
+            height: 1138px; 
+        }
+        .yuer{
+            width:600px;
+            height:600px;
+            position:absolute;
+            left:268px;
+            top:368px;
+            .animation(yuerani 30s linear infinite);
+            i{
+                width:177px;
+                height:188px;
+                background:url(http://nos.netease.com/house-public/cb786128fc5e4a0fd1ab7d08eedc1b05.png);
+                position:absolute;
+                bottom:0;
+                left:0;
+                z-index:1;
+            }
+        }
+    }
+    .hometip{
+        position:absolute;
+        bottom:0;
+        height:210px;
+        left:20px;
+        padding-left:60px;
+        width:150px;
+        background:url(http://nos.netease.com/house-public/8df1febebf39c01b11748b15c39250b1.png) 0 bottom no-repeat;
+        color:#fff;
+        font-size:26px;
+        z-index:20;
+    }
+    .ele1{
+       width:200px;
+       position:absolute;
+       bottom:128px;
+       left:47px;
+       .animation(cityani 2s ease-in-out infinite alternate);
+    }
+    .ele2{
+       width:86px;
+       position:absolute;
+       top:228px;
+       left:147px;
+       .animation(cityani 1s ease-in-out infinite alternate);  
+    }
+    .ele3{
+       width:200px;
+       position:absolute;
+       top:164px;
+       right:47px;
+       .animation(cityani 2s ease-in-out infinite alternate);
+    }
+    .ele4{
+       width:86px;
+       position:absolute;
+       top:228px;
+       left:147px;
+       .animation(cityani 1s ease-in-out infinite alternate);  
+    }
+    .yus{
+        position:absolute;
+        top:60px;
+        right:0px;
+        width:552px;
+        .opacity(0);
+        .animation(yusani 10s linear infinite);  
+    }
+    .popo1{
+        width:640px;
+        height:640px;
+        position:absolute;
+        background-position:0 0;
+        background-image:url(http://nos.netease.com/house-public/4efee46fc7b78ab0ac57d4716b7d27ed.png);
+        .animation(cityani 1.5s ease-in-out infinite alternate);
+    }
+    .popo2{
+        width:640px;
+        height:640px;
+        position:absolute;
+        background-position:0 0;
+        background-image:url(http://nos.netease.com/house-public/2a4ec62b0f25141090a26d574ff0cd97.png);
+        .animation(cityani 1.5s ease-in-out infinite alternate);
+    }
+    .popo3{
+        width:640px;
+        height:640px;
+        position:absolute;
+        background:url(http://nos.netease.com/house-public/d0eda52048075eec1b8c68f559c733f0.png) center center no-repeat;
+        .animation(cityani 1.5s ease-in-out infinite alternate);
+    }
+    .bjpopo{
+        top:335px;
+        left:345px;
+        img{
+            width:269px;
+            height:304px;
+            margin:180px auto 0;
+            display:block;
+        }
+    }
+    .cdpopo{
+        top:100px;
+        left:273px;
+        width:300px;
+        height:300px;
+        position:absolute;
+        background-size:100% 100%;
+        background-image:url(http://nos.netease.com/house-public/d0eda52048075eec1b8c68f559c733f0.png);
+        .animation(cityani 2s ease-in-out infinite alternate);
+        img{
+            width:200px;
+            margin:2px auto 0;
+            display:block;
+        }
+    }
+    .shpopo{
+        top:20px;
+        left:440px;
+        img{
+            width:233px;
+            height:372px;
+            margin:130px auto 0;
+            display:block;
+        }
+    }
+    .szpopo{
+        top:500px;
+        left:40px;
+        width:300px;
+        height:300px;
+        position:absolute;
+        background-size:100% 100%;
+        background-image:url(http://nos.netease.com/house-public/d0eda52048075eec1b8c68f559c733f0.png);
+        .animation(cityani 2s ease-in-out infinite alternate);
+        img{
+            width:201px;
+            margin:22px 0 0 53px;
+            display:block;
+        }
+    }
+    .gzpopo{
+        top:290px;
+        left:100px;
+        img{
+            width:232px;
+            height:355px;
+            margin:140px auto 0;
+            display:block;
+        }
+    }
+    .njpopo{
+        top:175px;
+        left:700px;
+        width:300px;
+        height:300px;
+        position:absolute;
+        background-size:100% 100%;
+        background-image:url(http://nos.netease.com/house-public/d0eda52048075eec1b8c68f559c733f0.png);
+        .animation(cityani 2s ease-in-out infinite alternate);
+        img{
+            width:223px;
+            margin:8px 0 0 13px;
+            display:block;
+        }
+    }
+    .hzpopo{
+        top:250px;
+        left:260px;
+        width:350px;
+        height:350px;
+        position:absolute;
+        background-size:100% 100%;
+        background-image:url(http://nos.netease.com/house-public/d0eda52048075eec1b8c68f559c733f0.png);
+        .animation(cityani 2s ease-in-out infinite alternate);
+        img{
+            width:228px;
+            margin:50px auto 0;
+            display:block;
+        }
+    }
+}
+.model{
+    display:block;
+    .opacity(0);
+    width:100%;
+    height:100%;
+    background:url(http://nos.netease.com/house-public/b16d4921e3f44f9a6034d8e0f6d7053c.jpg);
+    background-size:100% 100%;
+    position:absolute;
+    top:0;
+    z-index:15;
+    left:0;
+    .switch{
+        width:312px;
+        height:70px;
+        position:absolute;
+        top:100px;
+        left:164px;
+        background:url(http://nos.netease.com/house-public/84889b5d5cf353c90c5b0b331eb2d118.png);
+        z-index:90; 
+        span{
+            cursor:pointer;
+            float:left;
+            display:block;
+        }
+        .prev{
+            width:110px;
+            height:70px;    
+        }
+        .tohome{
+            width:92px;
+            height:70px;
+        }
+        .next{
+            width:110px;
+            height:70px;
+        }
+    }
+    .yuer{
+        width:600px;
+        height:600px;
+        position:absolute;
+        left:20px;
+        top:20px;
+        i{
+            width:177px;
+            height:188px;
+            background:url(http://nos.netease.com/house-public/cb786128fc5e4a0fd1ab7d08eedc1b05.png);
+            position:absolute;
+            bottom:0;
+            left:0;
+            z-index:1;
+        }
+    }
+    .yuerani{
+        .animation(yuerani 30s linear infinite);
+    }
+    .tips{
+        width:392px;
+        height:43px;
+        background:url(http://nos.netease.com/house-public/29963406b475b4215b791117a53b6d7c.png);
+        position:absolute;
+        bottom:280px;
+        left:124px;
+        z-index:50;
+        p{
+            width:392px;
+            height:43px;
+            line-height:43px;
+            float:left;
+            color:#061d2d;
+            font-size:24px;
+            text-align:center;
+        }
+        span{
+            width:105px;
+            height:40px;
+            float:left;
+            display:block;
+            cursor:pointer;
+            font-size:0;
+        }
+    }
+    .swiper-container{
+        width:640px;
+        height:700px;
+        position:absolute;
+        top:50%;
+        left:0;
+        overflow:hidden;
+        margin-top:-450px;
+    }
+    .swiper-wrapper{
+        width:6400px;
+        height:700px;
+        position:absolute;
+        overflow:hidden;
+        top:0;
+        left:0;
+        .swiper-slide{
+            width:640px;
+            height:700px;
+            float:left;
+        }
+        .netease{
+            width:65px;
+            height:65px;
+            background:url(http://nos.netease.com/house-public/c9f0aaf1c38de652dd1190a41dbbe101.png);
+            position:absolute;
+            top:245px;
+            right:30px;
+            z-index:40;
+        }
+        .ad{
+            width:88px;
+            height:88px;
+            background:url(http://nos.netease.com/house-public/be9e981af07de48f42731cf429a63214.png);
+            position:absolute;
+            bottom:55px;
+            left:80px;
+            z-index:40;
+            .animation(adani 5s linear infinite);
+        }
+        .locat{
+            width:68px;
+            height:68px;
+            background:url(http://nos.netease.com/house-public/84e7f8850ed8d2124dc820c0743dc486.png);
+            position:absolute;
+            bottom:183px;
+            right:117px;
+            z-index:40;
+            text-align:center;
+            vertical-align:middle;
+            img{
+                width:32px;
+                margin:0 auto;
+                margin-top:17px;
+                display:inline-block;
+            }
+        }
+        li{
+            float:left;
+            width:640px;
+            height:700px;
+            position:relative;
+        }
+        .city{
+            width:640px;
+            height:700px;
+            position:absolute;
+            top:0;
+            left:0;
+            background-position:0 0;
+            z-index:20;
+            .animation(cityani 2s ease-in-out infinite alternate);
+        }
+        .yuns{
+            width:432px;
+            height:103px;
+            position:absolute;
+            top:80px;
+            left:104px;
+            display:none;
+            .animation(yunsani 5s ease-in-out infinite alternate);
+            background:url(http://nos.netease.com/house-public/37f86a8db1416aa76262a345d3f18b4d.png);
+        }
+        .bj{
+            background-image:url(http://nos.netease.com/house-public/ce14366366ccc82ea09902cf8c3c32ce.png);
+        }
+        .bjan{
+           background-image:url(http://nos.netease.com/house-public/ddc724e9a97e2cd58b71123632f2fe8a.png); 
+        }
+        .nj{
+            background-image:url(http://nos.netease.com/house-public/5005557c919a5715d91ba4fe98f4ffb8.png);
+        }
+        .njan{
+            background-image:url(http://nos.netease.com/house-public/a31df7e4f28614f9b5329772759df617.png);
+        }
+        .hz{
+            background-image:url(http://nos.netease.com/house-public/4499133b8def483dba027600b63c083e.png);
+        }
+        .hzan{
+            background-image:url(http://nos.netease.com/house-public/c3a139e39a558c3710e5cab1030f3ff5.png);
+        }
+        .sh{
+            background-image:url(http://nos.netease.com/house-public/515565a8a294728bc44de93e7255bc0e.png);
+        }
+        .shan{
+            background-image:url(http://nos.netease.com/house-public/d9fe18ad21069ac4e15b1dc8fbb830a4.png);
+        }
+        .cd{
+            background-image:url(http://nos.netease.com/house-public/429394518c296bf32d0bd775407c2069.png);
+        }
+        .cdan{
+            background-image:url(http://nos.netease.com/house-public/79a8e348e8dd28ec547fb5dd9a1e2b27.png);
+        }
+        .gz{
+            background-image:url(http://nos.netease.com/house-public/518610633978316d1460a4a14c3978d2.png);
+        }
+        .gzan{
+            background-image:url(http://nos.netease.com/house-public/aa18ca45629d72f140b90f340ba5f443.png);
+        }
+        .sz{
+            background-image:url(http://nos.netease.com/house-public/10ca75fde0177ab9fce66a7700d57375.png);
+        }
+        .szan{
+            background-image:url(http://nos.netease.com/house-public/4c1b150caf11aa4d115a9d4b4fb2087f.png);
+        }
+        .circle{
+            position: absolute;
+            width: 620px;
+            height: 260px;
+            top:300px;
+            left:10px;
+            .transform(rotate(-25deg));
+        }
+        .circle1{
+            z-index:30;
+        }
+        .circle2{
+            z-index:10;
+        }
+    }
+    .errortips{
+        width:308px;
+        height:165px;
+        background:url(http://nos.netease.com/house-public/1d2d41d6ab2d89556461ad60dc44d258.png);
+        position:absolute;
+        display:none;
+        z-index:100;
+        bottom:100px;
+        left:10px;
+    }
+    .zongzibg{
+        position:absolute;
+        width:488px;
+        height:252px;
+        bottom:10px;
+        left:76px;
+        z-index:50;
+        background:url(http://nos.netease.com/house-public/40a275c066e6f956e6a39ddfcf3e0e47.png);
+        .right{
+            width:59px;
+            height:58px;
+            background:url(http://nos.netease.com/house-public/fefada2cb71836af8457c555295f5dad.png);
+            position:absolute;
+            display:none;
+        }
+        .rightbj{
+            top:62px;
+            left:117px;
+        }
+        .rightsh{
+            top:62px;
+            left:239px;
+        }
+        .rightcd{
+            top:62px;
+            left:361px;
+        }
+        .rightgz{
+            top:185px;
+            left:57px;
+        }
+        .rightsz{
+            top:185px;
+            left:179px;
+        }
+        .rightnj{
+            top:185px;
+            left:301px;
+        }
+        .righthz{
+            top:185px;
+            left:423px;
+        }      
+    }
+    img.drag{
+        position:absolute;
+    }
+    img.bj{
+        width:135px;
+        left:124px;
+        bottom:140px;
+        z-index:100;
+    }
+    img.sh{
+        width:89px;
+        left:273px;
+        bottom:141px;
+        z-index:100;
+    }
+    img.cd{
+        width:106px;
+        left:388px;
+        bottom:141px;
+        z-index:100;
+    }
+    img.gz{
+        width:84px;
+        left:94px;
+        bottom:17px;
+        z-index:100;
+    }
+    img.sz{
+        width:109px;
+        left:204px;
+        bottom:18px;
+        z-index:100;
+    }
+    img.nj{
+        width:104px;
+        left:327px;
+        bottom:18px;
+        z-index:100;
+    }
+    img.hz{
+        width:88px;
+        left:458px;
+        bottom:18px;
+        z-index:100;
+    }
+}
+.overlay{
+    background:rgba(0,0,0,0.7);
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    display:none; 
+}
+.overlay1{  
+    .overtips{
+        width:485px;
+        height:585px;
+        background:url(http://nos.netease.com/house-public/c7b8ca842b60d6455398c57f8fc5f9ec.png);
+        position:absolute;
+        top:50%;
+        margin-top:-400px;
+        right:100px;
+    }
+}
+.overlay2{  
+    display:none;
+    .sharetips{
+        width:436px;
+        height:472px;
+        background:url(http://nos.netease.com/house-public/183864047542bebf8b65ca3eb95544a0.png);
+        position:absolute;
+        top:50%;
+        margin-top:-350px;
+        right:100px;
+    }
+}
+.overlay3{
+    display:block;
+    .laybox3{
+        width:640px;
+        position:absolute;
+        top:560px;
+        left:0;
+    }
+    .ceng1{
+        width:149px;
+        height:147px;
+        background:url(http://nos.netease.com/house-public/79606a99158bdaa5c8e6155f520caf77.png);
+        position:absolute;
+        bottom:124px;
+        left:245px;
+    }
+    .ceng2{
+        width:82px;
+        height:82px;
+        background:url(http://nos.netease.com/house-public/19c36d0d47f031be3edc88b12bf8a60f.png);
+        position:absolute;
+        top:0px;
+        right:113px;
+    }
+    .pointer{
+        width:94px;
+        height:70px;
+        background:url(http://nos.netease.com/house-public/eab19accb83496d8edab35051ea77970.png);
+        position:absolute;
+        top:210px;
+        right:100px;
+    }
+    .arrow{
+        width:141px;
+        height:322px;
+        background:url(http://nos.netease.com/house-public/8b97ae985b49e36b1a1e9a54d9c4332f.png);
+        position:absolute;
+        top:86px;
+        right:157px;
+    }
+}
+@media handheld,only screen and (max-height:1140px) {
+   
+
+}

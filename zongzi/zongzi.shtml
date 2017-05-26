@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<!--[if IE 6 ]> <html id="ne_wrap" class="ne_ua_ie6 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 7 ]> <html id="ne_wrap" class="ne_ua_ie7 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 8 ]> <html id="ne_wrap" class="ne_ua_ie8 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 9 ]> <html id="ne_wrap" class="ne_ua_ie9"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--> <html id="ne_wrap"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="model_url" content="${modelUrl}" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+<meta name="viewport" id="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />
+<title>小粽子水下寻亲记</title>
+<meta name="keywords" content="粽子,端午节,水下,寻亲" />
+<meta name="description" content="粽子端午节水下寻亲" />
+<link rel="stylesheet" href="../common/common.css">
+<link rel="stylesheet" href="../common/swiper.min.css">
+<link rel="stylesheet" href="css/zongzi.css">
+</head>
+<body>
+	<h1 style="display:none">小粽子水下寻亲记</h1>
+	<audio controls="controls" id="bgm"  hidden="hidden" loop="loop" autoplay="autoplay"> 
+	    <source src="http://nos.netease.com/house-public/2be37bb31063e29997299c5d5c15353d.mp3" type="audio/mpeg" />
+	</audio>
+	<audio controls="controls" id="rightm"  hidden="hidden"> 
+	    <source src="http://nos.netease.com/house-public/5893280d97c46bac1e2074d607f5b1ef.mp3" type="audio/mpeg" />
+	</audio>
+	<audio controls="controls" id="errorm"  hidden="hidden"> 
+	    <source src="http://nos.netease.com/house-public/65b132d98779720c4d1fdac5ad105cb0.mp3" type="audio/mpeg" />
+	</audio>
+	<div class="loading">
+		<div class="zongzi" id="zongzi"></div>
+		<p class="tips">一船的小粽子正在驶来</p>
+		<p class="percent" id="percent"><em>0</em> %</p>
+	</div>
+	<div class="music musicon" id="music"></div>
+	<div class="share" id="share"></div>
+	<div class="index">
+		<img src="http://nos.netease.com/house-public/edfa40c8741278fa24282a9c9492f292.png" class="theme"/>	
+		<div class="shuiwen"></div>
+		<div class="go" id="go"></div>
+		<div class="po1"></div>
+		<div class="po2"></div>
+		<div class="yuer"><i></i></div>
+		<div class="logo"></div>
+	</div>
+	
+	<div class="home">
+		  <div id="hhh" style="font-size:30px;color:red;z-index:100000;width: 640px;height: 100px;position: absolute;"></div> 
+		<div class="hometip">
+			<p class="depth" id="depth">水深 <em>1800</em>m</p>
+			<p class="direction" id="direction">方位 <em>90</em>°</p>			
+		</div>
+		<div class="main" id="main">
+			<div id="surface_0" class="surface">
+		        <img class="bg" src="http://nos.netease.com/house-public/6211bb508e9457d0e26f5ce9e88d2fc6.png" alt="">
+				<div class="popo popo2 shpopo" id="shpopo">
+					<img _index="4" src="http://nos.netease.com/house-public/db7c4448b34b08275a9430dc0bd803c5.png" />
+		     	</div>
+		     	<div class="popo szpopo">
+					<img _index="5" src="http://nos.netease.com/house-public/ddba15964c9a2a942e3efa77c2cf1f04.png" />
+		     	</div>
+		     	<img class="yus" src="http://nos.netease.com/house-public/ce6aaaa5aa4a68691b5b5eb40ae0a101.png" alt="">
+		     	<img class="ele2" src="http://nos.netease.com/house-public/bc2ae44daf64ebf0d29b692cb0dc98bc.png"/>
+		    </div>
+		    <div id="surface_1" class="surface">
+		        <img class="bg" src="http://nos.netease.com/house-public/8cd8e1a1723a574cf89938e4d35e4166.jpg" alt="">
+		        <div class="popo popo2 gzpopo" id="gzpopo">
+					<img _index="7" src="http://nos.netease.com/house-public/e73142354f867ddfc94aa498bbc860f3.png" />
+		     	</div>
+		     	<div class="popo njpopo">
+					<img _index="2" src="http://nos.netease.com/house-public/e7908896ced000932269b0e2e8a6ba1b.png" />
+		     	</div>
+		     	<img class="yus" src="http://nos.netease.com/house-public/ce6aaaa5aa4a68691b5b5eb40ae0a101.png" alt="">
+		     	<img class="ele2" src="http://nos.netease.com/house-public/bc2ae44daf64ebf0d29b692cb0dc98bc.png"/>
+		    </div>
+		    <div id="surface_2" class="surface">
+		        <img class="bg" src="http://nos.netease.com/house-public/d2bf83c1750046d76b8e93afce1d5140.jpg" alt="">
+		        <div class="yuer"><i></i></div>
+		     	<div class="popo popo1 bjpopo" id="bjpopo">
+					<img _index="1" src="http://nos.netease.com/house-public/8857ea42e4001ac7368ee48d1b322ae1.png" /> 
+		     	</div>
+		     	<div class="popo cdpopo">
+					<img _index="6" src="http://nos.netease.com/house-public/7f8b7d73e83f05efb67a9b8b1ef095ea.png" />
+		     	</div>
+		     	<img class="ele1" src="http://nos.netease.com/house-public/a2a5247bede7ff8bca526ca164cc3083.png"/>
+		    </div>
+		    <div id="surface_3" class="surface">
+		    	<div class="yuer"><i></i></div>
+		        <img class="bg" src="http://nos.netease.com/house-public/5e3a3a719cb8f9940a63306a2ffaffa8.jpg" alt="">
+		        <div class="popo hzpopo">
+					<img _index="3" src="http://nos.netease.com/house-public/5be9eaf11f9b9228c9390674025ea109.png" />
+		     	</div>
+		     	<img class="ele3" src="http://nos.netease.com/house-public/a2a5247bede7ff8bca526ca164cc3083.png"/>
+		     	
+		    </div>
+		    <div id="surface_4" class="surface">
+		        <img class="bg" src="http://nos.netease.com/house-public/7aedfb6dbbe636bc5619f4762047c774.jpg" alt="">
+		    </div>
+		    <div id="surface_5" class="surface">
+		        <img class="bg" src="http://nos.netease.com/house-public/232eb3269244f09bdf6e101f933cd07f.jpg" alt="">
+		    </div>
+		</div>
+	</div>
+
+	<div class="model">
+		<div class="switch">
+			<span class="prev"></span>
+			<span class="tohome"></span>
+			<span class="next"></span>
+		</div>
+		<div class="yuer yuerani"><i></i></div>
+		<div class="tips" id="tips">
+			<p>还有<em>7</em>个小粽子在外流浪</p>
+		</div>
+		<img class="drag bj" _city="bj" src="http://nos.netease.com/house-public/6e142533f8ac81f9f759a43ff70558da.png" _width="50" _widthOrgin="135" _height="43" _marginTop="12" _offetTop="576.5" _offetLeft="464"/>
+		<img class="drag sh" _city="sh" src="http://nos.netease.com/house-public/371a09ffdaaa0f97be6f90a0855ff398.png" _width="40" _widthOrgin="89" _height="42" _marginTop="12" _offetTop="577.5" _offetLeft="469"/>
+		<img class="drag cd" _city="cd" src="http://nos.netease.com/house-public/277585a9216af67a4d753505a74a667d.png" _width="45" _widthOrgin="106" _height="37" _marginTop="15" _offetTop="580.5" _offetLeft="466.5"/>
+		<img class="drag gz" _city="gz" src="http://nos.netease.com/house-public/847748a86ed72a1deb77498ede1488a1.png" _width="35" _widthOrgin="84" _height="41" _marginTop="13" _offetTop="578.5" _offetLeft="471.5"/>
+		<img class="drag sz" _city="sz" src="http://nos.netease.com/house-public/70278111f1b371237a476d200aeaa1b4.png" _width="45" _widthOrgin="109" _height="41"  _marginTop="12" _offetTop="578.5" _offetLeft="466.5"/>
+		<img class="drag nj" _city="nj" src="http://nos.netease.com/house-public/186a9645e50a27e1beccd1b4d6bcadd8.png" _width="42" _widthOrgin="104" _height="41"   _marginTop="12" _offetTop="578.5" _offetLeft="468"/>
+		<img class="drag hz" _city="hz" src="http://nos.netease.com/house-public/c684cc37294a674c084b1e760fb3a212.png" _width="37" _widthOrgin="88" _height="40"    _marginTop="13" _offetTop="581.5" _offetLeft="468.5"/>
+		<div class="swiper-container">
+			<ul class="citybox swiper-wrapper">
+				<li class="swiper-slide" _city="bj">
+					<div class="city bj" _city="bj">
+						<div class="yuns"></div>
+					</div>
+					<div class="circle circle1">
+						<canvas  class="canvas1" width="620px" height="260px"></canvas>		
+					</div>
+					<div class="circle circle2">
+						<canvas  class="canvas2" width="620px" height="260px"></canvas>		
+					</div>	
+					<a href="http://3g.163.com/newsapp" class="netease"></a>
+					<a href="" class="ad"></a>
+					<a href="javascript:void(0)" class="locat"><img src="http://nos.netease.com/house-public/62f31ce33e91c5e9f166f8680b6c9530.png"/></a>
+				</li>
+				<li class="swiper-slide" _city="nj">
+					<div class="city nj" _city="nj"><div class="yuns"></div></div>		
+					<div class="circle circle1">
+						<canvas  class="canvas1" width="620px" height="260px"></canvas>		
+					</div>
+					<div class="circle circle2">
+						<canvas  class="canvas2" width="620px" height="260px"></canvas>		
+					</div>	
+					<a href="http://3g.163.com/newsapp" class="netease"></a>
+					<a href="" class="ad"></a>
+					<a href="javascript:void(0)" class="locat"><img src="http://nos.netease.com/house-public/62f31ce33e91c5e9f166f8680b6c9530.png"/></a>
+				</li>
+				<li class="swiper-slide" _city="hz">
+					<div class="city hz" _city="hz"><div class="yuns"></div></div>
+					<div class="circle circle1">
+						<canvas  class="canvas1" width="620px" height="260px"></canvas>		
+					</div>
+					<div class="circle circle2">
+						<canvas  class="canvas2" width="620px" height="260px"></canvas>		
+					</div>	
+					<a href="http://3g.163.com/newsapp" class="netease"></a>
+					<a href="" class="ad"></a>
+					<a href="javascript:void(0)" class="locat"><img src="http://nos.netease.com/house-public/62f31ce33e91c5e9f166f8680b6c9530.png"/></a>
+				</li>
+				<li class="swiper-slide" _city="sh">
+					<div class="city sh" _city="sh"><div class="yuns"></div></div>
+					<div class="circle circle1">
+						<canvas  class="canvas1" width="620px" height="260px"></canvas>		
+					</div>
+					<div class="circle circle2">
+						<canvas  class="canvas2" width="620px" height="260px"></canvas>		
+					</div>	
+					<a href="http://3g.163.com/newsapp" class="netease"></a>
+					<a href="" class="ad"></a>
+					<a href="javascript:void(0)" class="locat"><img src="http://nos.netease.com/house-public/62f31ce33e91c5e9f166f8680b6c9530.png"/></a>
+				</li>
+				<li class="swiper-slide" _city="sz">
+					<div class="city sz" _city="sz"><div class="yuns"></div></div>
+					<div class="circle circle1">
+						<canvas  class="canvas1" width="620px" height="260px"></canvas>		
+					</div>
+					<div class="circle circle2">
+						<canvas  class="canvas2" width="620px" height="260px"></canvas>		
+					</div>	
+					<a href="http://3g.163.com/newsapp" class="netease"></a>
+					<a href="" class="ad"></a>
+					<a href="javascript:void(0)" class="locat"><img src="http://nos.netease.com/house-public/62f31ce33e91c5e9f166f8680b6c9530.png"/></a>
+				</li>
+				<li class="swiper-slide" _city="cd">
+					<div class="city cd" _city="cd"><div class="yuns"></div></div>
+					<div class="circle circle1">
+						<canvas  class="canvas1" width="620px" height="260px"></canvas>		
+					</div>
+					<div class="circle circle2">
+						<canvas  class="canvas2" width="620px" height="260px"></canvas>		
+					</div>	
+					<a href="http://3g.163.com/newsapp" class="netease"></a>
+					<a href="" class="ad"></a>
+					<a href="javascript:void(0)" class="locat"><img src="http://nos.netease.com/house-public/62f31ce33e91c5e9f166f8680b6c9530.png"/></a>
+				</li>
+				<li class="swiper-slide" _city="gz">
+					<div class="city gz" _city="gz"><div class="yuns"></div></div>
+					<div class="circle circle1">
+						<canvas  class="canvas1" width="620px" height="260px"></canvas>		
+					</div>
+					<div class="circle circle2">
+						<canvas  class="canvas2" width="620px" height="260px"></canvas>		
+					</div>	
+					<a href="http://3g.163.com/newsapp" class="netease"></a>
+					<a href="" class="ad"></a>
+					<a href="javascript:void(0)" class="locat"><img src="http://nos.netease.com/house-public/62f31ce33e91c5e9f166f8680b6c9530.png"/></a>
+				</li>
+			</ul>
+		</div>	
+		<div class="zongzibg">
+			<div class="right rightbj" _city="bj"></div>
+			<div class="right rightsh" _city="sh"></div>
+			<div class="right rightcd" _city="cd"></div>
+			<div class="right rightgz" _city="gz"></div>
+			<div class="right rightsz" _city="sz"></div>
+			<div class="right rightnj" _city="nj"></div>
+			<div class="right righthz" _city="hz"></div>	
+		</div>
+		<div class="errortips" id="errortips"></div>
+		<div class="overlay overlay3">
+			<div class="laybox3">
+				<div class="pointer"></div>
+				<div class="arrow"></div>	
+				<div class="ceng1"></div>
+				<div class="ceng2"></div>	
+			</div>
+		</div>	
+	</div>
+	<div class="overlay overlay1">
+		<div class="overtips">				
+		</div>
+	</div>
+	<div class="overlay overlay2">
+		<div class="sharetips">
+			
+		</div>
+	</div>
+	<div class="loading-img" id="loading-img"></div>
+
+<script src="../common/jquery.js"></script>
+<script src="http://img2.cache.netease.com/f2e/house/house_lib/js/h5share_fixed.1059520.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/three.min.js"></script>
+<script src="js/CSS3DRenderer.min.js"></script>
+<script src="http://img2.cache.netease.com/f2e/house/house_lib/js/swiper.min.1059520.min.js"></script>
+<script src="js/orienter.js"></script>
+<script src="js/zongzi.js"></script>
+
+</body>
+</html>
